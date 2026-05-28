@@ -1,0 +1,20 @@
+com pasta:
+
+pyinstaller 
+--noconsole --name="AutomatizaX" 
+--icon="assets/configurator_code.ico" 
+--add-data "assets;assets" main.py
+
+
+com imagem de carregamento:
+
+pyinstaller --noconsole --onefile --splash="assets/imgCarregamento.png" --name="AutomatizaX" --icon="assets/AutomatizaX.ico" --add-data "assets;assets" main.py
+
+normal:
+
+pyinstaller 
+--noconsole 
+--onefile 
+--name="AutomatizaX" 
+--icon="assets/AutomatizaX.ico" 
+--add-data "assets;assets" main.py
