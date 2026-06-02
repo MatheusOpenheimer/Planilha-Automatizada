@@ -63,7 +63,9 @@ def executar():
     excel.Quit()
 
 def caminho_recurso(relativo):
-    return os.path.join(os.path.abspath("."), relativo)     
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, relativo)
+    return os.path.join(os.path.abspath("."), relativo)      
 #Janela
 janela = tk.Tk()
 janela.title("Planilha automatizada")
